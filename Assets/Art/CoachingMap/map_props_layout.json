@@ -1,0 +1,2623 @@
+{
+  "shellGlb": "Assets/Art/CoachingMap/CoachingCenter_Shell.glb",
+  "propTypes": [
+    {
+      "id": "Prop_WaterBottle_Green",
+      "glb": "Assets/Art/Props/Prop_WaterBottle_Green.glb",
+      "maxHealth": 35,
+      "moveSpeedMultiplier": 1.15,
+      "sizeBlender": [
+        0.082,
+        0.084,
+        0.21
+      ]
+    },
+    {
+      "id": "Prop_WaterBottle_Blue",
+      "glb": "Assets/Art/Props/Prop_WaterBottle_Blue.glb",
+      "maxHealth": 35,
+      "moveSpeedMultiplier": 1.15,
+      "sizeBlender": [
+        0.082,
+        0.084,
+        0.21
+      ]
+    },
+    {
+      "id": "Prop_BookStack",
+      "glb": "Assets/Art/Props/Prop_BookStack.glb",
+      "maxHealth": 40,
+      "moveSpeedMultiplier": 1.12,
+      "sizeBlender": [
+        0.24,
+        0.31,
+        0.044
+      ]
+    },
+    {
+      "id": "Prop_CoffeeMug",
+      "glb": "Assets/Art/Props/Prop_CoffeeMug.glb",
+      "maxHealth": 35,
+      "moveSpeedMultiplier": 1.15,
+      "sizeBlender": [
+        0.094,
+        0.096,
+        0.115
+      ]
+    },
+    {
+      "id": "Prop_DeskLamp",
+      "glb": "Assets/Art/Props/Prop_DeskLamp.glb",
+      "maxHealth": 45,
+      "moveSpeedMultiplier": 1.1,
+      "sizeBlender": [
+        0.166,
+        0.17,
+        0.211
+      ]
+    },
+    {
+      "id": "Prop_TeaKettle",
+      "glb": "Assets/Art/Props/Prop_TeaKettle.glb",
+      "maxHealth": 45,
+      "moveSpeedMultiplier": 1.1,
+      "sizeBlender": [
+        0.19,
+        0.19,
+        0.19
+      ]
+    },
+    {
+      "id": "Prop_Helmet",
+      "glb": "Assets/Art/Props/Prop_Helmet.glb",
+      "maxHealth": 40,
+      "moveSpeedMultiplier": 1.12,
+      "sizeBlender": [
+        0.224,
+        0.23,
+        0.11
+      ]
+    },
+    {
+      "id": "Prop_LunchBox",
+      "glb": "Assets/Art/Props/Prop_LunchBox.glb",
+      "maxHealth": 40,
+      "moveSpeedMultiplier": 1.12,
+      "sizeBlender": [
+        0.22,
+        0.16,
+        0.09
+      ]
+    },
+    {
+      "id": "Prop_Backpack_Navy",
+      "glb": "Assets/Art/Props/Prop_Backpack_Navy.glb",
+      "maxHealth": 60,
+      "moveSpeedMultiplier": 1.05,
+      "sizeBlender": [
+        0.31,
+        0.18,
+        0.4
+      ]
+    },
+    {
+      "id": "Prop_Backpack_Red",
+      "glb": "Assets/Art/Props/Prop_Backpack_Red.glb",
+      "maxHealth": 60,
+      "moveSpeedMultiplier": 1.05,
+      "sizeBlender": [
+        0.31,
+        0.18,
+        0.4
+      ]
+    },
+    {
+      "id": "Prop_PlasticStool",
+      "glb": "Assets/Art/Props/Prop_PlasticStool.glb",
+      "maxHealth": 65,
+      "moveSpeedMultiplier": 1.05,
+      "sizeBlender": [
+        0.36,
+        0.36,
+        0.421
+      ]
+    },
+    {
+      "id": "Prop_Dustbin_Green",
+      "glb": "Assets/Art/Props/Prop_Dustbin_Green.glb",
+      "maxHealth": 70,
+      "moveSpeedMultiplier": 1.02,
+      "sizeBlender": [
+        0.41,
+        0.41,
+        0.5
+      ]
+    },
+    {
+      "id": "Prop_Dustbin_Blue",
+      "glb": "Assets/Art/Props/Prop_Dustbin_Blue.glb",
+      "maxHealth": 70,
+      "moveSpeedMultiplier": 1.02,
+      "sizeBlender": [
+        0.41,
+        0.41,
+        0.5
+      ]
+    },
+    {
+      "id": "Prop_Bucket",
+      "glb": "Assets/Art/Props/Prop_Bucket.glb",
+      "maxHealth": 60,
+      "moveSpeedMultiplier": 1.05,
+      "sizeBlender": [
+        0.376,
+        0.376,
+        0.35
+      ]
+    },
+    {
+      "id": "Prop_CardboardBox",
+      "glb": "Assets/Art/Props/Prop_CardboardBox.glb",
+      "maxHealth": 75,
+      "moveSpeedMultiplier": 1.0,
+      "sizeBlender": [
+        0.58,
+        0.5,
+        0.48
+      ]
+    },
+    {
+      "id": "Prop_WoodenCrate",
+      "glb": "Assets/Art/Props/Prop_WoodenCrate.glb",
+      "maxHealth": 80,
+      "moveSpeedMultiplier": 0.98,
+      "sizeBlender": [
+        0.58,
+        0.58,
+        0.44
+      ]
+    },
+    {
+      "id": "Prop_FireExtinguisher",
+      "glb": "Assets/Art/Props/Prop_FireExtinguisher.glb",
+      "maxHealth": 65,
+      "moveSpeedMultiplier": 1.04,
+      "sizeBlender": [
+        0.19,
+        0.19,
+        0.52
+      ]
+    },
+    {
+      "id": "Prop_Printer",
+      "glb": "Assets/Art/Props/Prop_Printer.glb",
+      "maxHealth": 75,
+      "moveSpeedMultiplier": 0.98,
+      "sizeBlender": [
+        0.48,
+        0.44,
+        0.32
+      ]
+    },
+    {
+      "id": "Prop_Chair_Blue",
+      "glb": "Assets/Art/Props/Prop_Chair_Blue.glb",
+      "maxHealth": 85,
+      "moveSpeedMultiplier": 1.0,
+      "sizeBlender": [
+        0.46,
+        0.45,
+        0.44
+      ]
+    },
+    {
+      "id": "Prop_Chair_Red",
+      "glb": "Assets/Art/Props/Prop_Chair_Red.glb",
+      "maxHealth": 85,
+      "moveSpeedMultiplier": 1.0,
+      "sizeBlender": [
+        0.46,
+        0.45,
+        0.44
+      ]
+    },
+    {
+      "id": "Prop_OfficeChair",
+      "glb": "Assets/Art/Props/Prop_OfficeChair.glb",
+      "maxHealth": 95,
+      "moveSpeedMultiplier": 0.96,
+      "sizeBlender": [
+        0.514,
+        0.52,
+        0.5
+      ]
+    },
+    {
+      "id": "Prop_PottedPlant",
+      "glb": "Assets/Art/Props/Prop_PottedPlant.glb",
+      "maxHealth": 90,
+      "moveSpeedMultiplier": 0.96,
+      "sizeBlender": [
+        0.487,
+        0.5,
+        0.44
+      ]
+    },
+    {
+      "id": "Prop_ShoeRack",
+      "glb": "Assets/Art/Props/Prop_ShoeRack.glb",
+      "maxHealth": 95,
+      "moveSpeedMultiplier": 0.95,
+      "sizeBlender": [
+        0.9,
+        0.34,
+        0.68
+      ]
+    },
+    {
+      "id": "Prop_GasCylinder",
+      "glb": "Assets/Art/Props/Prop_GasCylinder.glb",
+      "maxHealth": 90,
+      "moveSpeedMultiplier": 0.96,
+      "sizeBlender": [
+        0.33,
+        0.33,
+        0.43
+      ]
+    },
+    {
+      "id": "Prop_Cycle_Black",
+      "glb": "Assets/Art/Props/Prop_Cycle_Black.glb",
+      "maxHealth": 110,
+      "moveSpeedMultiplier": 0.94,
+      "sizeBlender": [
+        0.15,
+        0.672,
+        0.672
+      ]
+    },
+    {
+      "id": "Prop_Cycle_Blue",
+      "glb": "Assets/Art/Props/Prop_Cycle_Blue.glb",
+      "maxHealth": 110,
+      "moveSpeedMultiplier": 0.94,
+      "sizeBlender": [
+        0.15,
+        0.672,
+        0.672
+      ]
+    },
+    {
+      "id": "Prop_Cycle_Red",
+      "glb": "Assets/Art/Props/Prop_Cycle_Red.glb",
+      "maxHealth": 110,
+      "moveSpeedMultiplier": 0.94,
+      "sizeBlender": [
+        0.15,
+        0.672,
+        0.672
+      ]
+    },
+    {
+      "id": "Prop_WaterCooler",
+      "glb": "Assets/Art/Props/Prop_WaterCooler.glb",
+      "maxHealth": 125,
+      "moveSpeedMultiplier": 0.9,
+      "sizeBlender": [
+        0.64,
+        0.6,
+        1.24
+      ]
+    },
+    {
+      "id": "Prop_PatnaBench",
+      "glb": "Assets/Art/Props/Prop_PatnaBench.glb",
+      "maxHealth": 130,
+      "moveSpeedMultiplier": 0.88,
+      "sizeBlender": [
+        1.52,
+        0.72,
+        0.78
+      ]
+    },
+    {
+      "id": "Prop_DoubtDesk",
+      "glb": "Assets/Art/Props/Prop_DoubtDesk.glb",
+      "maxHealth": 120,
+      "moveSpeedMultiplier": 0.9,
+      "sizeBlender": [
+        1.45,
+        0.72,
+        0.72
+      ]
+    }
+  ],
+  "placements": [
+    {
+      "propId": "Prop_Cycle_Black",
+      "blenderPos": [
+        -2.4,
+        5.2,
+        0.0
+      ],
+      "yawDeg": -88,
+      "room": "GF_CycleRow"
+    },
+    {
+      "propId": "Prop_Cycle_Blue",
+      "blenderPos": [
+        -2.4,
+        6.1,
+        0.0
+      ],
+      "yawDeg": -84,
+      "room": "GF_CycleRow"
+    },
+    {
+      "propId": "Prop_Cycle_Red",
+      "blenderPos": [
+        -2.4,
+        7.0,
+        0.0
+      ],
+      "yawDeg": -80,
+      "room": "GF_CycleRow"
+    },
+    {
+      "propId": "Prop_Cycle_Black",
+      "blenderPos": [
+        -2.4,
+        7.9,
+        0.0
+      ],
+      "yawDeg": -88,
+      "room": "GF_CycleRow"
+    },
+    {
+      "propId": "Prop_Cycle_Blue",
+      "blenderPos": [
+        -2.4,
+        8.8,
+        0.0
+      ],
+      "yawDeg": -84,
+      "room": "GF_CycleRow"
+    },
+    {
+      "propId": "Prop_Cycle_Red",
+      "blenderPos": [
+        -2.4,
+        9.7,
+        0.0
+      ],
+      "yawDeg": -80,
+      "room": "GF_CycleRow"
+    },
+    {
+      "propId": "Prop_Cycle_Black",
+      "blenderPos": [
+        -2.4,
+        10.6,
+        0.0
+      ],
+      "yawDeg": -88,
+      "room": "GF_CycleRow"
+    },
+    {
+      "propId": "Prop_Cycle_Blue",
+      "blenderPos": [
+        -2.4,
+        11.5,
+        0.0
+      ],
+      "yawDeg": -84,
+      "room": "GF_CycleRow"
+    },
+    {
+      "propId": "Prop_Cycle_Red",
+      "blenderPos": [
+        -2.4,
+        12.4,
+        0.0
+      ],
+      "yawDeg": -80,
+      "room": "GF_CycleRow"
+    },
+    {
+      "propId": "Prop_Cycle_Blue",
+      "blenderPos": [
+        7.42,
+        -6.0,
+        0.0
+      ],
+      "yawDeg": 87,
+      "room": "GF_CycleStand"
+    },
+    {
+      "propId": "Prop_Cycle_Red",
+      "blenderPos": [
+        7.42,
+        -5.1,
+        0.0
+      ],
+      "yawDeg": 94,
+      "room": "GF_CycleStand"
+    },
+    {
+      "propId": "Prop_Cycle_Black",
+      "blenderPos": [
+        7.42,
+        -4.2,
+        0.0
+      ],
+      "yawDeg": 90,
+      "room": "GF_CycleStand"
+    },
+    {
+      "propId": "Prop_Cycle_Blue",
+      "blenderPos": [
+        7.42,
+        -2.4,
+        0.0
+      ],
+      "yawDeg": 97,
+      "room": "GF_CycleStand"
+    },
+    {
+      "propId": "Prop_Cycle_Red",
+      "blenderPos": [
+        7.42,
+        -1.5,
+        0.0
+      ],
+      "yawDeg": 93,
+      "room": "GF_CycleStand"
+    },
+    {
+      "propId": "Prop_Cycle_Black",
+      "blenderPos": [
+        7.42,
+        0.3,
+        0.0
+      ],
+      "yawDeg": 89,
+      "room": "GF_CycleStand"
+    },
+    {
+      "propId": "Prop_Cycle_Blue",
+      "blenderPos": [
+        7.42,
+        1.2,
+        0.0
+      ],
+      "yawDeg": 96,
+      "room": "GF_CycleStand"
+    },
+    {
+      "propId": "Prop_Cycle_Red",
+      "blenderPos": [
+        7.42,
+        2.1,
+        0.0
+      ],
+      "yawDeg": 92,
+      "room": "GF_CycleStand"
+    },
+    {
+      "propId": "Prop_Cycle_Black",
+      "blenderPos": [
+        7.42,
+        4.3,
+        0.0
+      ],
+      "yawDeg": 88,
+      "room": "GF_CycleStand"
+    },
+    {
+      "propId": "Prop_Cycle_Blue",
+      "blenderPos": [
+        7.42,
+        5.2,
+        0.0
+      ],
+      "yawDeg": 95,
+      "room": "GF_CycleStand"
+    },
+    {
+      "propId": "Prop_Cycle_Red",
+      "blenderPos": [
+        7.42,
+        7.0,
+        0.0
+      ],
+      "yawDeg": 91,
+      "room": "GF_CycleStand"
+    },
+    {
+      "propId": "Prop_Cycle_Black",
+      "blenderPos": [
+        7.42,
+        7.9,
+        0.0
+      ],
+      "yawDeg": 87,
+      "room": "GF_CycleStand"
+    },
+    {
+      "propId": "Prop_Cycle_Blue",
+      "blenderPos": [
+        7.42,
+        9.7,
+        0.0
+      ],
+      "yawDeg": 94,
+      "room": "GF_CycleStand"
+    },
+    {
+      "propId": "Prop_Cycle_Red",
+      "blenderPos": [
+        7.42,
+        10.6,
+        0.0
+      ],
+      "yawDeg": 90,
+      "room": "GF_CycleStand"
+    },
+    {
+      "propId": "Prop_Cycle_Black",
+      "blenderPos": [
+        7.42,
+        11.5,
+        0.0
+      ],
+      "yawDeg": 97,
+      "room": "GF_CycleStand"
+    },
+    {
+      "propId": "Prop_Cycle_Red",
+      "blenderPos": [
+        4.15,
+        -1.4,
+        0.0
+      ],
+      "yawDeg": -90,
+      "room": "GF_InnerStand"
+    },
+    {
+      "propId": "Prop_Cycle_Black",
+      "blenderPos": [
+        4.15,
+        -0.5,
+        0.0
+      ],
+      "yawDeg": -85,
+      "room": "GF_InnerStand"
+    },
+    {
+      "propId": "Prop_Cycle_Blue",
+      "blenderPos": [
+        4.15,
+        0.4,
+        0.0
+      ],
+      "yawDeg": -89,
+      "room": "GF_InnerStand"
+    },
+    {
+      "propId": "Prop_Cycle_Red",
+      "blenderPos": [
+        4.15,
+        2.6,
+        0.0
+      ],
+      "yawDeg": -84,
+      "room": "GF_InnerStand"
+    },
+    {
+      "propId": "Prop_Cycle_Black",
+      "blenderPos": [
+        4.15,
+        3.5,
+        0.0
+      ],
+      "yawDeg": -88,
+      "room": "GF_InnerStand"
+    },
+    {
+      "propId": "Prop_Cycle_Blue",
+      "blenderPos": [
+        4.15,
+        5.2,
+        0.0
+      ],
+      "yawDeg": -83,
+      "room": "GF_InnerStand"
+    },
+    {
+      "propId": "Prop_Cycle_Red",
+      "blenderPos": [
+        4.15,
+        7.2,
+        0.0
+      ],
+      "yawDeg": -87,
+      "room": "GF_InnerStand"
+    },
+    {
+      "propId": "Prop_Cycle_Black",
+      "blenderPos": [
+        4.15,
+        8.1,
+        0.0
+      ],
+      "yawDeg": -82,
+      "room": "GF_InnerStand"
+    },
+    {
+      "propId": "Prop_Cycle_Blue",
+      "blenderPos": [
+        4.15,
+        9.0,
+        0.0
+      ],
+      "yawDeg": -86,
+      "room": "GF_InnerStand"
+    },
+    {
+      "propId": "Prop_WaterCooler",
+      "blenderPos": [
+        7.95,
+        -11.4,
+        0.0
+      ],
+      "yawDeg": 90,
+      "room": "GF_GateRight"
+    },
+    {
+      "propId": "Prop_Dustbin_Blue",
+      "blenderPos": [
+        7.95,
+        -10.5,
+        0.0
+      ],
+      "yawDeg": 0,
+      "room": "GF_GateRight"
+    },
+    {
+      "propId": "Prop_DoubtDesk",
+      "blenderPos": [
+        5.5,
+        -11.6,
+        0.0
+      ],
+      "yawDeg": 0,
+      "room": "GF_Guard"
+    },
+    {
+      "propId": "Prop_Chair_Red",
+      "blenderPos": [
+        5.5,
+        -12.4,
+        0.0
+      ],
+      "yawDeg": 0,
+      "room": "GF_Guard"
+    },
+    {
+      "propId": "Prop_WaterBottle_Green",
+      "blenderPos": [
+        5.8,
+        -11.5,
+        0.765
+      ],
+      "yawDeg": 0,
+      "room": "GF_Guard"
+    },
+    {
+      "propId": "Prop_BookStack",
+      "blenderPos": [
+        5.2,
+        -11.6,
+        0.765
+      ],
+      "yawDeg": 15,
+      "room": "GF_Guard"
+    },
+    {
+      "propId": "Prop_PottedPlant",
+      "blenderPos": [
+        -5.4,
+        -12.6,
+        0.0
+      ],
+      "yawDeg": 0,
+      "room": "GF_Gate"
+    },
+    {
+      "propId": "Prop_PottedPlant",
+      "blenderPos": [
+        3.85,
+        -12.6,
+        0.0
+      ],
+      "yawDeg": 45,
+      "room": "GF_Gate"
+    },
+    {
+      "propId": "Prop_Dustbin_Green",
+      "blenderPos": [
+        -7.85,
+        -12.8,
+        0.0
+      ],
+      "yawDeg": 0,
+      "room": "GF_GateLeft"
+    },
+    {
+      "propId": "Prop_Dustbin_Green",
+      "blenderPos": [
+        -0.5,
+        12.9,
+        0.0
+      ],
+      "yawDeg": 0,
+      "room": "GF_Back"
+    },
+    {
+      "propId": "Prop_Helmet",
+      "blenderPos": [
+        -7.9,
+        -9.8,
+        0.465
+      ],
+      "yawDeg": 20,
+      "room": "GF_WaitBench"
+    },
+    {
+      "propId": "Prop_Backpack_Navy",
+      "blenderPos": [
+        -7.9,
+        -7.6,
+        0.465
+      ],
+      "yawDeg": -15,
+      "room": "GF_WaitBench"
+    },
+    {
+      "propId": "Prop_FireExtinguisher",
+      "blenderPos": [
+        -3.2,
+        -1.7,
+        0.0
+      ],
+      "yawDeg": 0,
+      "room": "GF_Stairs"
+    },
+    {
+      "propId": "Prop_ShoeRack",
+      "blenderPos": [
+        -6.5,
+        -1.75,
+        0.0
+      ],
+      "yawDeg": 0,
+      "room": "GF_Stairs"
+    },
+    {
+      "propId": "Prop_PlasticStool",
+      "blenderPos": [
+        -5.0,
+        1.4,
+        0.0
+      ],
+      "yawDeg": 20,
+      "room": "GF_UnderStairs"
+    },
+    {
+      "propId": "Prop_Bucket",
+      "blenderPos": [
+        -4.1,
+        1.65,
+        0.0
+      ],
+      "yawDeg": 0,
+      "room": "GF_UnderStairs"
+    },
+    {
+      "propId": "Prop_WoodenCrate",
+      "blenderPos": [
+        -5.8,
+        1.5,
+        0.0
+      ],
+      "yawDeg": 12,
+      "room": "GF_UnderStairs"
+    },
+    {
+      "propId": "Prop_CardboardBox",
+      "blenderPos": [
+        -3.8,
+        0.8,
+        0.0
+      ],
+      "yawDeg": -8,
+      "room": "GF_UnderStairs"
+    },
+    {
+      "propId": "Prop_PlasticStool",
+      "blenderPos": [
+        8.0,
+        -7.8,
+        0.0
+      ],
+      "yawDeg": 10,
+      "room": "GF_CycleStand"
+    },
+    {
+      "propId": "Prop_WoodenCrate",
+      "blenderPos": [
+        7.9,
+        13.0,
+        0.0
+      ],
+      "yawDeg": 0,
+      "room": "GF_Back"
+    },
+    {
+      "propId": "Prop_DoubtDesk",
+      "blenderPos": [
+        -7.1,
+        9.8,
+        0.0
+      ],
+      "yawDeg": 90,
+      "room": "GF_Room"
+    },
+    {
+      "propId": "Prop_OfficeChair",
+      "blenderPos": [
+        -6.15,
+        9.8,
+        0.0
+      ],
+      "yawDeg": -90,
+      "room": "GF_Room"
+    },
+    {
+      "propId": "Prop_Printer",
+      "blenderPos": [
+        -7.2,
+        10.2,
+        0.765
+      ],
+      "yawDeg": 90,
+      "room": "GF_Room"
+    },
+    {
+      "propId": "Prop_BookStack",
+      "blenderPos": [
+        -7.0,
+        9.3,
+        0.765
+      ],
+      "yawDeg": 20,
+      "room": "GF_Room"
+    },
+    {
+      "propId": "Prop_CardboardBox",
+      "blenderPos": [
+        -7.75,
+        5.1,
+        0.0
+      ],
+      "yawDeg": 10,
+      "room": "GF_Room"
+    },
+    {
+      "propId": "Prop_CardboardBox",
+      "blenderPos": [
+        -7.75,
+        5.8,
+        0.0
+      ],
+      "yawDeg": -5,
+      "room": "GF_Room"
+    },
+    {
+      "propId": "Prop_WoodenCrate",
+      "blenderPos": [
+        -7.75,
+        6.6,
+        0.0
+      ],
+      "yawDeg": 15,
+      "room": "GF_Room"
+    },
+    {
+      "propId": "Prop_PlasticStool",
+      "blenderPos": [
+        -4.2,
+        11.8,
+        0.0
+      ],
+      "yawDeg": 30,
+      "room": "GF_Room"
+    },
+    {
+      "propId": "Prop_Dustbin_Green",
+      "blenderPos": [
+        -3.85,
+        12.9,
+        0.0
+      ],
+      "yawDeg": 0,
+      "room": "GF_Room"
+    },
+    {
+      "propId": "Prop_Bucket",
+      "blenderPos": [
+        -5.4,
+        12.9,
+        0.0
+      ],
+      "yawDeg": 0,
+      "room": "GF_Room"
+    },
+    {
+      "propId": "Prop_PatnaBench",
+      "blenderPos": [
+        -6.25,
+        7.05,
+        4.0
+      ],
+      "yawDeg": 180,
+      "room": "1F_BigClass"
+    },
+    {
+      "propId": "Prop_BookStack",
+      "blenderPos": [
+        -5.97,
+        6.87,
+        4.76
+      ],
+      "yawDeg": 12,
+      "room": "1F_BigClass"
+    },
+    {
+      "propId": "Prop_WaterBottle_Green",
+      "blenderPos": [
+        -6.61,
+        6.87,
+        4.76
+      ],
+      "yawDeg": 0,
+      "room": "1F_BigClass"
+    },
+    {
+      "propId": "Prop_PatnaBench",
+      "blenderPos": [
+        -6.25,
+        8.38,
+        4.0
+      ],
+      "yawDeg": 180,
+      "room": "1F_BigClass"
+    },
+    {
+      "propId": "Prop_Backpack_Navy",
+      "blenderPos": [
+        -6.47,
+        8.6,
+        4.46
+      ],
+      "yawDeg": 170,
+      "room": "1F_BigClass"
+    },
+    {
+      "propId": "Prop_PatnaBench",
+      "blenderPos": [
+        -6.25,
+        9.71,
+        4.0
+      ],
+      "yawDeg": 180,
+      "room": "1F_BigClass"
+    },
+    {
+      "propId": "Prop_BookStack",
+      "blenderPos": [
+        -5.97,
+        9.53,
+        4.76
+      ],
+      "yawDeg": 36,
+      "room": "1F_BigClass"
+    },
+    {
+      "propId": "Prop_WaterBottle_Green",
+      "blenderPos": [
+        -6.61,
+        9.53,
+        4.76
+      ],
+      "yawDeg": 0,
+      "room": "1F_BigClass"
+    },
+    {
+      "propId": "Prop_PatnaBench",
+      "blenderPos": [
+        -6.25,
+        11.04,
+        4.0
+      ],
+      "yawDeg": 180,
+      "room": "1F_BigClass"
+    },
+    {
+      "propId": "Prop_Backpack_Navy",
+      "blenderPos": [
+        -6.47,
+        11.26,
+        4.46
+      ],
+      "yawDeg": 170,
+      "room": "1F_BigClass"
+    },
+    {
+      "propId": "Prop_LunchBox",
+      "blenderPos": [
+        -5.95,
+        10.86,
+        4.76
+      ],
+      "yawDeg": 25,
+      "room": "1F_BigClass"
+    },
+    {
+      "propId": "Prop_PatnaBench",
+      "blenderPos": [
+        -6.25,
+        12.37,
+        4.0
+      ],
+      "yawDeg": 180,
+      "room": "1F_BigClass"
+    },
+    {
+      "propId": "Prop_BookStack",
+      "blenderPos": [
+        -5.97,
+        12.19,
+        4.76
+      ],
+      "yawDeg": 60,
+      "room": "1F_BigClass"
+    },
+    {
+      "propId": "Prop_WaterBottle_Green",
+      "blenderPos": [
+        -6.61,
+        12.19,
+        4.76
+      ],
+      "yawDeg": 0,
+      "room": "1F_BigClass"
+    },
+    {
+      "propId": "Prop_PatnaBench",
+      "blenderPos": [
+        -2.55,
+        7.05,
+        4.0
+      ],
+      "yawDeg": 180,
+      "room": "1F_BigClass"
+    },
+    {
+      "propId": "Prop_Backpack_Red",
+      "blenderPos": [
+        -2.77,
+        7.27,
+        4.46
+      ],
+      "yawDeg": 170,
+      "room": "1F_BigClass"
+    },
+    {
+      "propId": "Prop_PatnaBench",
+      "blenderPos": [
+        -2.55,
+        8.38,
+        4.0
+      ],
+      "yawDeg": 180,
+      "room": "1F_BigClass"
+    },
+    {
+      "propId": "Prop_BookStack",
+      "blenderPos": [
+        -2.27,
+        8.2,
+        4.76
+      ],
+      "yawDeg": 24,
+      "room": "1F_BigClass"
+    },
+    {
+      "propId": "Prop_WaterBottle_Blue",
+      "blenderPos": [
+        -2.91,
+        8.2,
+        4.76
+      ],
+      "yawDeg": 0,
+      "room": "1F_BigClass"
+    },
+    {
+      "propId": "Prop_PatnaBench",
+      "blenderPos": [
+        -2.55,
+        9.71,
+        4.0
+      ],
+      "yawDeg": 180,
+      "room": "1F_BigClass"
+    },
+    {
+      "propId": "Prop_Backpack_Red",
+      "blenderPos": [
+        -2.77,
+        9.93,
+        4.46
+      ],
+      "yawDeg": 170,
+      "room": "1F_BigClass"
+    },
+    {
+      "propId": "Prop_PatnaBench",
+      "blenderPos": [
+        -2.55,
+        11.04,
+        4.0
+      ],
+      "yawDeg": 180,
+      "room": "1F_BigClass"
+    },
+    {
+      "propId": "Prop_BookStack",
+      "blenderPos": [
+        -2.27,
+        10.86,
+        4.76
+      ],
+      "yawDeg": 48,
+      "room": "1F_BigClass"
+    },
+    {
+      "propId": "Prop_WaterBottle_Blue",
+      "blenderPos": [
+        -2.91,
+        10.86,
+        4.76
+      ],
+      "yawDeg": 0,
+      "room": "1F_BigClass"
+    },
+    {
+      "propId": "Prop_PatnaBench",
+      "blenderPos": [
+        -2.55,
+        12.37,
+        4.0
+      ],
+      "yawDeg": 180,
+      "room": "1F_BigClass"
+    },
+    {
+      "propId": "Prop_Backpack_Red",
+      "blenderPos": [
+        -2.77,
+        12.59,
+        4.46
+      ],
+      "yawDeg": 170,
+      "room": "1F_BigClass"
+    },
+    {
+      "propId": "Prop_Dustbin_Green",
+      "blenderPos": [
+        -0.75,
+        4.75,
+        4.254
+      ],
+      "yawDeg": 0,
+      "room": "1F_BigClass"
+    },
+    {
+      "propId": "Prop_PlasticStool",
+      "blenderPos": [
+        -1.2,
+        5.2,
+        4.254
+      ],
+      "yawDeg": 15,
+      "room": "1F_BigClass"
+    },
+    {
+      "propId": "Prop_Chair_Blue",
+      "blenderPos": [
+        -7.8,
+        12.9,
+        4.0
+      ],
+      "yawDeg": 180,
+      "room": "1F_BigClass"
+    },
+    {
+      "propId": "Prop_FireExtinguisher",
+      "blenderPos": [
+        -0.65,
+        8.2,
+        4.0
+      ],
+      "yawDeg": 0,
+      "room": "1F_BigClass"
+    },
+    {
+      "propId": "Prop_PatnaBench",
+      "blenderPos": [
+        3.25,
+        10.12,
+        4.0
+      ],
+      "yawDeg": 90,
+      "room": "1F_ClassRoom"
+    },
+    {
+      "propId": "Prop_Backpack_Red",
+      "blenderPos": [
+        3.47,
+        10.0,
+        4.46
+      ],
+      "yawDeg": 85,
+      "room": "1F_ClassRoom"
+    },
+    {
+      "propId": "Prop_PatnaBench",
+      "blenderPos": [
+        3.25,
+        12.58,
+        4.0
+      ],
+      "yawDeg": 90,
+      "room": "1F_ClassRoom"
+    },
+    {
+      "propId": "Prop_BookStack",
+      "blenderPos": [
+        3.07,
+        12.8,
+        4.76
+      ],
+      "yawDeg": 95,
+      "room": "1F_ClassRoom"
+    },
+    {
+      "propId": "Prop_WaterBottle_Blue",
+      "blenderPos": [
+        3.07,
+        12.28,
+        4.76
+      ],
+      "yawDeg": 0,
+      "room": "1F_ClassRoom"
+    },
+    {
+      "propId": "Prop_PatnaBench",
+      "blenderPos": [
+        4.65,
+        10.12,
+        4.0
+      ],
+      "yawDeg": 90,
+      "room": "1F_ClassRoom"
+    },
+    {
+      "propId": "Prop_BookStack",
+      "blenderPos": [
+        4.47,
+        10.34,
+        4.76
+      ],
+      "yawDeg": 95,
+      "room": "1F_ClassRoom"
+    },
+    {
+      "propId": "Prop_WaterBottle_Blue",
+      "blenderPos": [
+        4.47,
+        9.82,
+        4.76
+      ],
+      "yawDeg": 0,
+      "room": "1F_ClassRoom"
+    },
+    {
+      "propId": "Prop_PatnaBench",
+      "blenderPos": [
+        4.65,
+        12.58,
+        4.0
+      ],
+      "yawDeg": 90,
+      "room": "1F_ClassRoom"
+    },
+    {
+      "propId": "Prop_PatnaBench",
+      "blenderPos": [
+        6.05,
+        10.12,
+        4.0
+      ],
+      "yawDeg": 90,
+      "room": "1F_ClassRoom"
+    },
+    {
+      "propId": "Prop_Backpack_Red",
+      "blenderPos": [
+        6.27,
+        10.0,
+        4.46
+      ],
+      "yawDeg": 85,
+      "room": "1F_ClassRoom"
+    },
+    {
+      "propId": "Prop_PatnaBench",
+      "blenderPos": [
+        6.05,
+        12.58,
+        4.0
+      ],
+      "yawDeg": 90,
+      "room": "1F_ClassRoom"
+    },
+    {
+      "propId": "Prop_BookStack",
+      "blenderPos": [
+        5.87,
+        12.8,
+        4.76
+      ],
+      "yawDeg": 95,
+      "room": "1F_ClassRoom"
+    },
+    {
+      "propId": "Prop_WaterBottle_Blue",
+      "blenderPos": [
+        5.87,
+        12.28,
+        4.76
+      ],
+      "yawDeg": 0,
+      "room": "1F_ClassRoom"
+    },
+    {
+      "propId": "Prop_PatnaBench",
+      "blenderPos": [
+        7.45,
+        10.12,
+        4.0
+      ],
+      "yawDeg": 90,
+      "room": "1F_ClassRoom"
+    },
+    {
+      "propId": "Prop_BookStack",
+      "blenderPos": [
+        7.27,
+        10.34,
+        4.76
+      ],
+      "yawDeg": 95,
+      "room": "1F_ClassRoom"
+    },
+    {
+      "propId": "Prop_WaterBottle_Blue",
+      "blenderPos": [
+        7.27,
+        9.82,
+        4.76
+      ],
+      "yawDeg": 0,
+      "room": "1F_ClassRoom"
+    },
+    {
+      "propId": "Prop_PatnaBench",
+      "blenderPos": [
+        7.45,
+        12.58,
+        4.0
+      ],
+      "yawDeg": 90,
+      "room": "1F_ClassRoom"
+    },
+    {
+      "propId": "Prop_Dustbin_Blue",
+      "blenderPos": [
+        0.25,
+        13.0,
+        4.254
+      ],
+      "yawDeg": 0,
+      "room": "1F_ClassRoom"
+    },
+    {
+      "propId": "Prop_PlasticStool",
+      "blenderPos": [
+        0.75,
+        11.4,
+        4.254
+      ],
+      "yawDeg": 0,
+      "room": "1F_ClassRoom"
+    },
+    {
+      "propId": "Prop_Chair_Blue",
+      "blenderPos": [
+        4.55,
+        4.9,
+        4.0
+      ],
+      "yawDeg": 90,
+      "room": "1F_Study"
+    },
+    {
+      "propId": "Prop_DeskLamp",
+      "blenderPos": [
+        3.85,
+        5.15,
+        4.765
+      ],
+      "yawDeg": 90,
+      "room": "1F_Study"
+    },
+    {
+      "propId": "Prop_BookStack",
+      "blenderPos": [
+        3.85,
+        4.7,
+        4.765
+      ],
+      "yawDeg": 90,
+      "room": "1F_Study"
+    },
+    {
+      "propId": "Prop_Chair_Blue",
+      "blenderPos": [
+        4.55,
+        6.1,
+        4.0
+      ],
+      "yawDeg": 90,
+      "room": "1F_Study"
+    },
+    {
+      "propId": "Prop_DeskLamp",
+      "blenderPos": [
+        3.85,
+        6.35,
+        4.765
+      ],
+      "yawDeg": 90,
+      "room": "1F_Study"
+    },
+    {
+      "propId": "Prop_BookStack",
+      "blenderPos": [
+        3.85,
+        5.9,
+        4.765
+      ],
+      "yawDeg": 90,
+      "room": "1F_Study"
+    },
+    {
+      "propId": "Prop_Chair_Blue",
+      "blenderPos": [
+        4.55,
+        7.4,
+        4.0
+      ],
+      "yawDeg": 90,
+      "room": "1F_Study"
+    },
+    {
+      "propId": "Prop_DeskLamp",
+      "blenderPos": [
+        3.85,
+        7.65,
+        4.765
+      ],
+      "yawDeg": 90,
+      "room": "1F_Study"
+    },
+    {
+      "propId": "Prop_BookStack",
+      "blenderPos": [
+        3.85,
+        7.2,
+        4.765
+      ],
+      "yawDeg": 90,
+      "room": "1F_Study"
+    },
+    {
+      "propId": "Prop_Chair_Blue",
+      "blenderPos": [
+        5.95,
+        4.95,
+        4.0
+      ],
+      "yawDeg": 0,
+      "room": "1F_Study"
+    },
+    {
+      "propId": "Prop_Chair_Blue",
+      "blenderPos": [
+        5.95,
+        7.95,
+        4.0
+      ],
+      "yawDeg": 180,
+      "room": "1F_Study"
+    },
+    {
+      "propId": "Prop_DeskLamp",
+      "blenderPos": [
+        5.75,
+        8.65,
+        4.765
+      ],
+      "yawDeg": 180,
+      "room": "1F_Study"
+    },
+    {
+      "propId": "Prop_WaterBottle_Green",
+      "blenderPos": [
+        6.17,
+        5.65,
+        4.765
+      ],
+      "yawDeg": 0,
+      "room": "1F_Study"
+    },
+    {
+      "propId": "Prop_CoffeeMug",
+      "blenderPos": [
+        5.7,
+        5.55,
+        4.765
+      ],
+      "yawDeg": 30,
+      "room": "1F_Study"
+    },
+    {
+      "propId": "Prop_Chair_Blue",
+      "blenderPos": [
+        7.0,
+        4.95,
+        4.0
+      ],
+      "yawDeg": 0,
+      "room": "1F_Study"
+    },
+    {
+      "propId": "Prop_Chair_Blue",
+      "blenderPos": [
+        7.0,
+        7.95,
+        4.0
+      ],
+      "yawDeg": 180,
+      "room": "1F_Study"
+    },
+    {
+      "propId": "Prop_DeskLamp",
+      "blenderPos": [
+        6.8,
+        8.65,
+        4.765
+      ],
+      "yawDeg": 180,
+      "room": "1F_Study"
+    },
+    {
+      "propId": "Prop_WaterBottle_Green",
+      "blenderPos": [
+        7.22,
+        5.65,
+        4.765
+      ],
+      "yawDeg": 0,
+      "room": "1F_Study"
+    },
+    {
+      "propId": "Prop_CoffeeMug",
+      "blenderPos": [
+        6.75,
+        5.55,
+        4.765
+      ],
+      "yawDeg": 30,
+      "room": "1F_Study"
+    },
+    {
+      "propId": "Prop_Backpack_Navy",
+      "blenderPos": [
+        4.6,
+        8.2,
+        4.0
+      ],
+      "yawDeg": 20,
+      "room": "1F_Study"
+    },
+    {
+      "propId": "Prop_Dustbin_Green",
+      "blenderPos": [
+        7.95,
+        8.7,
+        4.0
+      ],
+      "yawDeg": 0,
+      "room": "1F_Study"
+    },
+    {
+      "propId": "Prop_PottedPlant",
+      "blenderPos": [
+        7.95,
+        5.6,
+        4.0
+      ],
+      "yawDeg": 0,
+      "room": "1F_Study"
+    },
+    {
+      "propId": "Prop_DoubtDesk",
+      "blenderPos": [
+        3.2,
+        -2.55,
+        4.0
+      ],
+      "yawDeg": 0,
+      "room": "1F_Staff"
+    },
+    {
+      "propId": "Prop_OfficeChair",
+      "blenderPos": [
+        3.2,
+        -3.25,
+        4.0
+      ],
+      "yawDeg": 180,
+      "room": "1F_Staff"
+    },
+    {
+      "propId": "Prop_CoffeeMug",
+      "blenderPos": [
+        3.55,
+        -2.55,
+        4.765
+      ],
+      "yawDeg": 45,
+      "room": "1F_Staff"
+    },
+    {
+      "propId": "Prop_BookStack",
+      "blenderPos": [
+        2.85,
+        -2.55,
+        4.765
+      ],
+      "yawDeg": 10,
+      "room": "1F_Staff"
+    },
+    {
+      "propId": "Prop_DoubtDesk",
+      "blenderPos": [
+        6.2,
+        -2.55,
+        4.0
+      ],
+      "yawDeg": 0,
+      "room": "1F_Staff"
+    },
+    {
+      "propId": "Prop_OfficeChair",
+      "blenderPos": [
+        6.2,
+        -3.25,
+        4.0
+      ],
+      "yawDeg": 180,
+      "room": "1F_Staff"
+    },
+    {
+      "propId": "Prop_CoffeeMug",
+      "blenderPos": [
+        6.55,
+        -2.55,
+        4.765
+      ],
+      "yawDeg": 45,
+      "room": "1F_Staff"
+    },
+    {
+      "propId": "Prop_BookStack",
+      "blenderPos": [
+        5.85,
+        -2.55,
+        4.765
+      ],
+      "yawDeg": 10,
+      "room": "1F_Staff"
+    },
+    {
+      "propId": "Prop_DoubtDesk",
+      "blenderPos": [
+        6.5,
+        -5.8,
+        4.0
+      ],
+      "yawDeg": 0,
+      "room": "1F_Staff"
+    },
+    {
+      "propId": "Prop_OfficeChair",
+      "blenderPos": [
+        6.5,
+        -5.1,
+        4.0
+      ],
+      "yawDeg": 0,
+      "room": "1F_Staff"
+    },
+    {
+      "propId": "Prop_Printer",
+      "blenderPos": [
+        7.0,
+        -5.8,
+        4.765
+      ],
+      "yawDeg": 0,
+      "room": "1F_Staff"
+    },
+    {
+      "propId": "Prop_Chair_Red",
+      "blenderPos": [
+        2.25,
+        -5.6,
+        4.0
+      ],
+      "yawDeg": 90,
+      "room": "1F_Staff"
+    },
+    {
+      "propId": "Prop_Chair_Red",
+      "blenderPos": [
+        4.25,
+        -5.6,
+        4.0
+      ],
+      "yawDeg": -90,
+      "room": "1F_Staff"
+    },
+    {
+      "propId": "Prop_PlasticStool",
+      "blenderPos": [
+        3.25,
+        -5.6,
+        4.0
+      ],
+      "yawDeg": 0,
+      "room": "1F_Staff"
+    },
+    {
+      "propId": "Prop_Dustbin_Blue",
+      "blenderPos": [
+        8.0,
+        -6.5,
+        4.0
+      ],
+      "yawDeg": 0,
+      "room": "1F_Staff"
+    },
+    {
+      "propId": "Prop_PottedPlant",
+      "blenderPos": [
+        1.5,
+        -2.1,
+        4.0
+      ],
+      "yawDeg": 0,
+      "room": "1F_Staff"
+    },
+    {
+      "propId": "Prop_TeaKettle",
+      "blenderPos": [
+        -5.88,
+        -1.96,
+        4.95
+      ],
+      "yawDeg": 25,
+      "room": "1F_Kitchen"
+    },
+    {
+      "propId": "Prop_CoffeeMug",
+      "blenderPos": [
+        -7.0,
+        -2.1,
+        4.885
+      ],
+      "yawDeg": 0,
+      "room": "1F_Kitchen"
+    },
+    {
+      "propId": "Prop_LunchBox",
+      "blenderPos": [
+        -7.8,
+        -3.3,
+        4.885
+      ],
+      "yawDeg": 15,
+      "room": "1F_Kitchen"
+    },
+    {
+      "propId": "Prop_WaterBottle_Blue",
+      "blenderPos": [
+        -7.8,
+        -5.4,
+        4.885
+      ],
+      "yawDeg": 0,
+      "room": "1F_Kitchen"
+    },
+    {
+      "propId": "Prop_GasCylinder",
+      "blenderPos": [
+        -4.75,
+        -2.25,
+        4.0
+      ],
+      "yawDeg": 0,
+      "room": "1F_Kitchen"
+    },
+    {
+      "propId": "Prop_Bucket",
+      "blenderPos": [
+        -7.1,
+        -6.2,
+        4.0
+      ],
+      "yawDeg": 0,
+      "room": "1F_Kitchen"
+    },
+    {
+      "propId": "Prop_Dustbin_Green",
+      "blenderPos": [
+        -5.5,
+        -6.2,
+        4.0
+      ],
+      "yawDeg": 0,
+      "room": "1F_Kitchen"
+    },
+    {
+      "propId": "Prop_PlasticStool",
+      "blenderPos": [
+        -6.2,
+        -4.4,
+        4.0
+      ],
+      "yawDeg": 12,
+      "room": "1F_Kitchen"
+    },
+    {
+      "propId": "Prop_DoubtDesk",
+      "blenderPos": [
+        -7.1,
+        -10.2,
+        4.0
+      ],
+      "yawDeg": 90,
+      "room": "1F_Room"
+    },
+    {
+      "propId": "Prop_Printer",
+      "blenderPos": [
+        -7.1,
+        -9.8,
+        4.765
+      ],
+      "yawDeg": 90,
+      "room": "1F_Room"
+    },
+    {
+      "propId": "Prop_OfficeChair",
+      "blenderPos": [
+        -6.1,
+        -10.2,
+        4.0
+      ],
+      "yawDeg": -90,
+      "room": "1F_Room"
+    },
+    {
+      "propId": "Prop_CardboardBox",
+      "blenderPos": [
+        -4.6,
+        -12.6,
+        4.0
+      ],
+      "yawDeg": 12,
+      "room": "1F_Room"
+    },
+    {
+      "propId": "Prop_WoodenCrate",
+      "blenderPos": [
+        -5.4,
+        -12.6,
+        4.0
+      ],
+      "yawDeg": -6,
+      "room": "1F_Room"
+    },
+    {
+      "propId": "Prop_CardboardBox",
+      "blenderPos": [
+        -7.8,
+        -12.5,
+        4.0
+      ],
+      "yawDeg": 5,
+      "room": "1F_Room"
+    },
+    {
+      "propId": "Prop_Dustbin_Green",
+      "blenderPos": [
+        -4.6,
+        -7.4,
+        4.0
+      ],
+      "yawDeg": 0,
+      "room": "1F_Room"
+    },
+    {
+      "propId": "Prop_DoubtDesk",
+      "blenderPos": [
+        -2.2,
+        -12.45,
+        4.0
+      ],
+      "yawDeg": 0,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_OfficeChair",
+      "blenderPos": [
+        -2.2,
+        -13.05,
+        4.0
+      ],
+      "yawDeg": 0,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_Chair_Blue",
+      "blenderPos": [
+        -2.56,
+        -11.77,
+        4.0
+      ],
+      "yawDeg": 180,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_Chair_Red",
+      "blenderPos": [
+        -1.84,
+        -11.77,
+        4.0
+      ],
+      "yawDeg": 180,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_BookStack",
+      "blenderPos": [
+        -2.45,
+        -12.45,
+        4.765
+      ],
+      "yawDeg": 14,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_WaterBottle_Green",
+      "blenderPos": [
+        -1.75,
+        -12.55,
+        4.765
+      ],
+      "yawDeg": 0,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_DoubtDesk",
+      "blenderPos": [
+        0.1,
+        -12.45,
+        4.0
+      ],
+      "yawDeg": 0,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_OfficeChair",
+      "blenderPos": [
+        0.1,
+        -13.05,
+        4.0
+      ],
+      "yawDeg": 0,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_Chair_Blue",
+      "blenderPos": [
+        -0.26,
+        -11.77,
+        4.0
+      ],
+      "yawDeg": 180,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_Chair_Red",
+      "blenderPos": [
+        0.46,
+        -11.77,
+        4.0
+      ],
+      "yawDeg": 180,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_BookStack",
+      "blenderPos": [
+        -0.15,
+        -12.45,
+        4.765
+      ],
+      "yawDeg": 14,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_WaterBottle_Green",
+      "blenderPos": [
+        0.55,
+        -12.55,
+        4.765
+      ],
+      "yawDeg": 0,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_DoubtDesk",
+      "blenderPos": [
+        2.4,
+        -12.45,
+        4.0
+      ],
+      "yawDeg": 0,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_OfficeChair",
+      "blenderPos": [
+        2.4,
+        -13.05,
+        4.0
+      ],
+      "yawDeg": 0,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_Chair_Blue",
+      "blenderPos": [
+        2.04,
+        -11.77,
+        4.0
+      ],
+      "yawDeg": 180,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_Chair_Red",
+      "blenderPos": [
+        2.76,
+        -11.77,
+        4.0
+      ],
+      "yawDeg": 180,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_BookStack",
+      "blenderPos": [
+        2.15,
+        -12.45,
+        4.765
+      ],
+      "yawDeg": 14,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_WaterBottle_Green",
+      "blenderPos": [
+        2.85,
+        -12.55,
+        4.765
+      ],
+      "yawDeg": 0,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_DoubtDesk",
+      "blenderPos": [
+        4.7,
+        -12.45,
+        4.0
+      ],
+      "yawDeg": 0,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_OfficeChair",
+      "blenderPos": [
+        4.7,
+        -13.05,
+        4.0
+      ],
+      "yawDeg": 0,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_Chair_Blue",
+      "blenderPos": [
+        4.34,
+        -11.77,
+        4.0
+      ],
+      "yawDeg": 180,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_Chair_Red",
+      "blenderPos": [
+        5.06,
+        -11.77,
+        4.0
+      ],
+      "yawDeg": 180,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_BookStack",
+      "blenderPos": [
+        4.45,
+        -12.45,
+        4.765
+      ],
+      "yawDeg": 14,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_WaterBottle_Green",
+      "blenderPos": [
+        5.15,
+        -12.55,
+        4.765
+      ],
+      "yawDeg": 0,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_DoubtDesk",
+      "blenderPos": [
+        0.4,
+        -7.95,
+        4.0
+      ],
+      "yawDeg": 180,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_OfficeChair",
+      "blenderPos": [
+        0.4,
+        -7.35,
+        4.0
+      ],
+      "yawDeg": 180,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_Chair_Blue",
+      "blenderPos": [
+        0.04,
+        -8.63,
+        4.0
+      ],
+      "yawDeg": 0,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_Chair_Red",
+      "blenderPos": [
+        0.76,
+        -8.63,
+        4.0
+      ],
+      "yawDeg": 0,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_BookStack",
+      "blenderPos": [
+        0.65,
+        -7.95,
+        4.765
+      ],
+      "yawDeg": -12,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_WaterBottle_Blue",
+      "blenderPos": [
+        -0.05,
+        -7.85,
+        4.765
+      ],
+      "yawDeg": 0,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_DoubtDesk",
+      "blenderPos": [
+        2.8,
+        -7.95,
+        4.0
+      ],
+      "yawDeg": 180,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_OfficeChair",
+      "blenderPos": [
+        2.8,
+        -7.35,
+        4.0
+      ],
+      "yawDeg": 180,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_Chair_Blue",
+      "blenderPos": [
+        2.44,
+        -8.63,
+        4.0
+      ],
+      "yawDeg": 0,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_Chair_Red",
+      "blenderPos": [
+        3.16,
+        -8.63,
+        4.0
+      ],
+      "yawDeg": 0,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_BookStack",
+      "blenderPos": [
+        3.05,
+        -7.95,
+        4.765
+      ],
+      "yawDeg": -12,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_WaterBottle_Blue",
+      "blenderPos": [
+        2.35,
+        -7.85,
+        4.765
+      ],
+      "yawDeg": 0,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_DoubtDesk",
+      "blenderPos": [
+        5.2,
+        -7.95,
+        4.0
+      ],
+      "yawDeg": 180,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_OfficeChair",
+      "blenderPos": [
+        5.2,
+        -7.35,
+        4.0
+      ],
+      "yawDeg": 180,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_Chair_Blue",
+      "blenderPos": [
+        4.84,
+        -8.63,
+        4.0
+      ],
+      "yawDeg": 0,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_Chair_Red",
+      "blenderPos": [
+        5.56,
+        -8.63,
+        4.0
+      ],
+      "yawDeg": 0,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_BookStack",
+      "blenderPos": [
+        5.45,
+        -7.95,
+        4.765
+      ],
+      "yawDeg": -12,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_WaterBottle_Blue",
+      "blenderPos": [
+        4.75,
+        -7.85,
+        4.765
+      ],
+      "yawDeg": 0,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_PlasticStool",
+      "blenderPos": [
+        -3.65,
+        -9.8,
+        4.0
+      ],
+      "yawDeg": 0,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_Dustbin_Blue",
+      "blenderPos": [
+        7.75,
+        -13.0,
+        4.0
+      ],
+      "yawDeg": 0,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_PottedPlant",
+      "blenderPos": [
+        7.8,
+        -7.55,
+        4.0
+      ],
+      "yawDeg": 0,
+      "room": "1F_DoubtClass"
+    },
+    {
+      "propId": "Prop_FireExtinguisher",
+      "blenderPos": [
+        -0.12,
+        3.3,
+        4.0
+      ],
+      "yawDeg": 0,
+      "room": "1F_Corridor"
+    },
+    {
+      "propId": "Prop_PottedPlant",
+      "blenderPos": [
+        2.9,
+        3.1,
+        4.0
+      ],
+      "yawDeg": 0,
+      "room": "1F_Corridor"
+    },
+    {
+      "propId": "Prop_Dustbin_Green",
+      "blenderPos": [
+        -2.5,
+        3.3,
+        4.0
+      ],
+      "yawDeg": 0,
+      "room": "1F_Corridor"
+    },
+    {
+      "propId": "Prop_ShoeRack",
+      "blenderPos": [
+        2.8,
+        8.4,
+        4.0
+      ],
+      "yawDeg": 90,
+      "room": "1F_Corridor"
+    },
+    {
+      "propId": "Prop_Chair_Blue",
+      "blenderPos": [
+        0.5,
+        -2.5,
+        4.0
+      ],
+      "yawDeg": 90,
+      "room": "1F_Corridor"
+    },
+    {
+      "propId": "Prop_Chair_Blue",
+      "blenderPos": [
+        0.5,
+        -3.5,
+        4.0
+      ],
+      "yawDeg": 90,
+      "room": "1F_Corridor"
+    }
+  ],
+  "spawns": {
+    "hunterSpawns": [
+      [
+        -1.9,
+        -14.8,
+        0.1
+      ],
+      [
+        -0.4,
+        -14.8,
+        0.1
+      ],
+      [
+        1.0,
+        -14.8,
+        0.1
+      ],
+      [
+        -1.2,
+        -11.8,
+        0.1
+      ],
+      [
+        0.8,
+        -12.0,
+        0.1
+      ],
+      [
+        -1.4,
+        -9.8,
+        0.1
+      ]
+    ],
+    "propSpawns": [
+      [
+        5.8,
+        -4.0,
+        0.1
+      ],
+      [
+        5.8,
+        6.0,
+        0.1
+      ],
+      [
+        -1.2,
+        8.0,
+        0.1
+      ],
+      [
+        -5.5,
+        7.5,
+        0.1
+      ],
+      [
+        -6.0,
+        -5.0,
+        0.1
+      ],
+      [
+        2.5,
+        -6.0,
+        0.1
+      ],
+      [
+        -4.4,
+        9.5,
+        4.1
+      ],
+      [
+        -4.4,
+        11.5,
+        4.1
+      ],
+      [
+        4.5,
+        11.3,
+        4.1
+      ],
+      [
+        6.2,
+        6.2,
+        4.1
+      ],
+      [
+        4.5,
+        -4.2,
+        4.1
+      ],
+      [
+        -6.2,
+        -4.4,
+        4.1
+      ],
+      [
+        -6.0,
+        -10.5,
+        4.1
+      ],
+      [
+        1.2,
+        -10.2,
+        4.1
+      ],
+      [
+        5.2,
+        -10.2,
+        4.1
+      ],
+      [
+        1.5,
+        5.5,
+        4.1
+      ]
+    ]
+  }
+}

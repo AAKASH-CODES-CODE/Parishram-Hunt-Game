@@ -1,0 +1,33 @@
+{
+    "name": "CoachingPropHunt.Runtime",
+    "rootNamespace": "CoachingPropHunt",
+    "references": [
+        "PlayerAuthentication",
+        "PlayerSave",
+        "LiveOps",
+        "Unity.Netcode.Runtime",
+        "Unity.Collections",
+        "Unity.Services.Core",
+        "Unity.Services.Authentication",
+        "Unity.Services.Multiplayer",
+        "Unity.Services.QoS",
+        "Unity.Networking.Transport",
+        "Unity.Cinemachine",
+        "Unity.AI.Navigation",
+        "Unity.InputSystem",
+        "Unity.TextMeshPro",
+        "UnityEngine.UI",
+        "Unity.RenderPipelines.Universal.Runtime",
+        "Unity.RenderPipelines.Core.Runtime",
+        "glTFast"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

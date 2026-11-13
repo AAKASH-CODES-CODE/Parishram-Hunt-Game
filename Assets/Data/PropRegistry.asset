@@ -1,0 +1,255 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e01fe1c574a19c243aa629c8dd4dfd57, type: 3}
+  m_Name: PropRegistry
+  m_EditorClassIdentifier: CoachingPropHunt.Runtime::CoachingPropHunt.Props.PropRegistrySO
+  entries:
+  - propId: Prop_WaterBottle_Green
+    displayName: WaterBottle Green
+    sizeTier: 0
+    prefab: {fileID: 5758490630940949470, guid: df1ed4fab9652be44b695f4190cbb4fe, type: 3}
+    maxHealth: 35
+    moveSpeedMultiplier: 1.15
+    boundsSize: {x: 0.08189395, y: 0.26999998, z: 0.08400001}
+    pivotBottomOffset: -0.105000004
+  - propId: Prop_WaterBottle_Blue
+    displayName: WaterBottle Blue
+    sizeTier: 0
+    prefab: {fileID: 6778316190826835304, guid: ca69f6ad6d01e9f4aaaa70ca6da4dab6, type: 3}
+    maxHealth: 35
+    moveSpeedMultiplier: 1.15
+    boundsSize: {x: 0.08189395, y: 0.26999998, z: 0.08400001}
+    pivotBottomOffset: -0.105000004
+  - propId: Prop_BookStack
+    displayName: BookStack
+    sizeTier: 0
+    prefab: {fileID: 1008183239301088617, guid: 62a6c0ee0a1002f46b5cf973ff80c6f7, type: 3}
+    maxHealth: 40
+    moveSpeedMultiplier: 1.12
+    boundsSize: {x: 0.2667373, y: 0.116, z: 0.32493204}
+    pivotBottomOffset: -0.022
+  - propId: Prop_CoffeeMug
+    displayName: CoffeeMug
+    sizeTier: 0
+    prefab: {fileID: 3723565515876285681, guid: b5b18973ddd644c4a89c846bf4d8df03, type: 3}
+    maxHealth: 35
+    moveSpeedMultiplier: 1.15
+    boundsSize: {x: 0.12079655, y: 0.116, z: 0.09600001}
+    pivotBottomOffset: -0.057500005
+  - propId: Prop_DeskLamp
+    displayName: DeskLamp
+    sizeTier: 0
+    prefab: {fileID: 6986314704011672376, guid: bba4602254cb6d741bb7449b52fe05aa, type: 3}
+    maxHealth: 45
+    moveSpeedMultiplier: 1.1
+    boundsSize: {x: 0.16573776, y: 0.40801385, z: 0.2526166}
+    pivotBottomOffset: -0.10550474
+  - propId: Prop_TeaKettle
+    displayName: TeaKettle
+    sizeTier: 0
+    prefab: {fileID: 5660265424710859172, guid: 8f3ce9f437b93f448a789a2e4b6f2b4e, type: 3}
+    maxHealth: 45
+    moveSpeedMultiplier: 1.1
+    boundsSize: {x: 0.2583116, y: 0.215, z: 0.19000001}
+    pivotBottomOffset: -0.095
+  - propId: Prop_Helmet
+    displayName: Helmet
+    sizeTier: 0
+    prefab: {fileID: 8157825282156390730, guid: 2a87b5db0871778478b062dfb5315791, type: 3}
+    maxHealth: 40
+    moveSpeedMultiplier: 1.12
+    boundsSize: {x: 0.22423343, y: 0.16, z: 0.25715995}
+    pivotBottomOffset: -0.054999992
+  - propId: Prop_LunchBox
+    displayName: LunchBox
+    sizeTier: 0
+    prefab: {fileID: 2782633457190473233, guid: 8a84145bbf52eb447a71e80ecdc08489, type: 3}
+    maxHealth: 40
+    moveSpeedMultiplier: 1.12
+    boundsSize: {x: 0.22, y: 0.10900001, z: 0.16}
+    pivotBottomOffset: -0.045
+  - propId: Prop_Backpack_Navy
+    displayName: Backpack Navy
+    sizeTier: 1
+    prefab: {fileID: 5743821041433478601, guid: 2e3c7f04fa389184d8b6704672bc1b47, type: 3}
+    maxHealth: 60
+    moveSpeedMultiplier: 1.05
+    boundsSize: {x: 0.31, y: 0.43999994, z: 0.2525}
+    pivotBottomOffset: -0.20000005
+  - propId: Prop_Backpack_Red
+    displayName: Backpack Red
+    sizeTier: 1
+    prefab: {fileID: 375342132774629450, guid: 2f3e7dc451a1b884389f67307bef8399, type: 3}
+    maxHealth: 60
+    moveSpeedMultiplier: 1.05
+    boundsSize: {x: 0.31, y: 0.43999994, z: 0.2525}
+    pivotBottomOffset: -0.20000005
+  - propId: Prop_PlasticStool
+    displayName: PlasticStool
+    sizeTier: 1
+    prefab: {fileID: 4793320170480836275, guid: 1003fa1b10698184db557ffb44ce5798, type: 3}
+    maxHealth: 65
+    moveSpeedMultiplier: 1.05
+    boundsSize: {x: 0.38414806, y: 0.45405173, z: 0.3841479}
+    pivotBottomOffset: -0.20897257
+  - propId: Prop_Dustbin_Green
+    displayName: Dustbin Green
+    sizeTier: 1
+    prefab: {fileID: 8665551771583118563, guid: 77267f0a1ef779c4185b19a8f5ed9357, type: 3}
+    maxHealth: 70
+    moveSpeedMultiplier: 1.02
+    boundsSize: {x: 0.41000003, y: 0.52, z: 0.41000003}
+    pivotBottomOffset: -0.25
+  - propId: Prop_Dustbin_Blue
+    displayName: Dustbin Blue
+    sizeTier: 1
+    prefab: {fileID: 7720343459368904012, guid: 4eb8e97037a92844a89e5bf0b062c89f, type: 3}
+    maxHealth: 70
+    moveSpeedMultiplier: 1.02
+    boundsSize: {x: 0.41000003, y: 0.52, z: 0.41000003}
+    pivotBottomOffset: -0.25
+  - propId: Prop_Bucket
+    displayName: Bucket
+    sizeTier: 1
+    prefab: {fileID: 3127036617715566945, guid: 55971077af1fbc14589952cf6a85226e, type: 3}
+    maxHealth: 60
+    moveSpeedMultiplier: 1.05
+    boundsSize: {x: 0.37600002, y: 0.36500004, z: 0.37600002}
+    pivotBottomOffset: -0.175
+  - propId: Prop_CardboardBox
+    displayName: CardboardBox
+    sizeTier: 1
+    prefab: {fileID: 6195047954049173345, guid: efb9c37afa5eda1499aba440e47ce3d0, type: 3}
+    maxHealth: 75
+    moveSpeedMultiplier: 1
+    boundsSize: {x: 0.58, y: 0.48, z: 0.5}
+    pivotBottomOffset: 0.24
+  - propId: Prop_WoodenCrate
+    displayName: WoodenCrate
+    sizeTier: 1
+    prefab: {fileID: 2123161461841071035, guid: b5b41b5033027a640bf20b63d4bb01ec, type: 3}
+    maxHealth: 80
+    moveSpeedMultiplier: 0.98
+    boundsSize: {x: 0.58, y: 0.43999994, z: 0.58}
+    pivotBottomOffset: -0.24000001
+  - propId: Prop_FireExtinguisher
+    displayName: FireExtinguisher
+    sizeTier: 0
+    prefab: {fileID: 5716372304268542786, guid: 3771fb9fa88bb894795d959e9c46cfad, type: 3}
+    maxHealth: 65
+    moveSpeedMultiplier: 1.04
+    boundsSize: {x: 0.22923025, y: 0.6524999, z: 0.19000001}
+    pivotBottomOffset: -0.26
+  - propId: Prop_Printer
+    displayName: Printer
+    sizeTier: 1
+    prefab: {fileID: 6758598357070467833, guid: 72567e766609c0a4aaed00d8c1547a51, type: 3}
+    maxHealth: 75
+    moveSpeedMultiplier: 0.98
+    boundsSize: {x: 0.48, y: 0.35000002, z: 0.51}
+    pivotBottomOffset: -0.15999997
+  - propId: Prop_Chair_Blue
+    displayName: Chair Blue
+    sizeTier: 1
+    prefab: {fileID: 2172405772917637934, guid: fbd5581e8b26a4740a13d6ca71281900, type: 3}
+    maxHealth: 85
+    moveSpeedMultiplier: 1
+    boundsSize: {x: 0.46, y: 0.89999986, z: 0.45749998}
+    pivotBottomOffset: -0.22000003
+  - propId: Prop_Chair_Red
+    displayName: Chair Red
+    sizeTier: 1
+    prefab: {fileID: 2803206575894087731, guid: 62989bdf7e9e24d4e94f129f604c0b8a, type: 3}
+    maxHealth: 85
+    moveSpeedMultiplier: 1
+    boundsSize: {x: 0.46, y: 0.89999986, z: 0.45749998}
+    pivotBottomOffset: -0.22000003
+  - propId: Prop_OfficeChair
+    displayName: OfficeChair
+    sizeTier: 1
+    prefab: {fileID: 8854894596150747802, guid: be65c243e292f59448f92b31e3c75379, type: 3}
+    maxHealth: 95
+    moveSpeedMultiplier: 0.96
+    boundsSize: {x: 0.54, y: 0.97, z: 0.52000004}
+    pivotBottomOffset: -0.28999996
+  - propId: Prop_PottedPlant
+    displayName: PottedPlant
+    sizeTier: 2
+    prefab: {fileID: 1520326516610153907, guid: 5e8fec6e98e085b43b906c9739cfb5c3, type: 3}
+    maxHealth: 90
+    moveSpeedMultiplier: 0.96
+    boundsSize: {x: 0.5766109, y: 1.02, z: 0.5766109}
+    pivotBottomOffset: -0.22000003
+  - propId: Prop_ShoeRack
+    displayName: ShoeRack
+    sizeTier: 1
+    prefab: {fileID: 5691515388508313580, guid: fe7dffcfa210069419bb89282e9ada29, type: 3}
+    maxHealth: 95
+    moveSpeedMultiplier: 0.95
+    boundsSize: {x: 0.9, y: 0.68000007, z: 0.34}
+    pivotBottomOffset: -0.3399999
+  - propId: Prop_GasCylinder
+    displayName: GasCylinder
+    sizeTier: 1
+    prefab: {fileID: 324740505673816740, guid: 972de0043d9bfdd4f995e58e6725a3fd, type: 3}
+    maxHealth: 90
+    moveSpeedMultiplier: 0.96
+    boundsSize: {x: 0.33000004, y: 0.65, z: 0.33000004}
+    pivotBottomOffset: -0.21499997
+  - propId: Prop_Cycle_Black
+    displayName: Cycle Black
+    sizeTier: 2
+    prefab: {fileID: 5247897974005133129, guid: 920046d21351522449f99a916a3812fc, type: 3}
+    maxHealth: 110
+    moveSpeedMultiplier: 0.94
+    boundsSize: {x: 0.46, y: 0.9779999, z: 1.7119999}
+    pivotBottomOffset: -0.33000004
+  - propId: Prop_Cycle_Blue
+    displayName: Cycle Blue
+    sizeTier: 2
+    prefab: {fileID: 468462982477008381, guid: bbeddd39f95ed744caa8e28fa2716209, type: 3}
+    maxHealth: 110
+    moveSpeedMultiplier: 0.94
+    boundsSize: {x: 0.46, y: 0.9779999, z: 1.7119999}
+    pivotBottomOffset: -0.33000004
+  - propId: Prop_Cycle_Red
+    displayName: Cycle Red
+    sizeTier: 2
+    prefab: {fileID: 3004566475012770176, guid: 03c726a4953c97f47b176b736176d175, type: 3}
+    maxHealth: 110
+    moveSpeedMultiplier: 0.94
+    boundsSize: {x: 0.46, y: 0.9779999, z: 1.7119999}
+    pivotBottomOffset: -0.33000004
+  - propId: Prop_WaterCooler
+    displayName: WaterCooler
+    sizeTier: 2
+    prefab: {fileID: 3031939290321788864, guid: 16ea945bddf028349a2d13f688085dee, type: 3}
+    maxHealth: 125
+    moveSpeedMultiplier: 0.9
+    boundsSize: {x: 0.64, y: 1.6799998, z: 0.73}
+    pivotBottomOffset: -0.6200001
+  - propId: Prop_PatnaBench
+    displayName: PatnaBench
+    sizeTier: 2
+    prefab: {fileID: 298834242620449363, guid: 06454071357eb6b428907d775c4c6fa1, type: 3}
+    maxHealth: 130
+    moveSpeedMultiplier: 0.88
+    boundsSize: {x: 1.52, y: 0.79999995, z: 0.73}
+    pivotBottomOffset: -0.39
+  - propId: Prop_DoubtDesk
+    displayName: DoubtDesk
+    sizeTier: 2
+    prefab: {fileID: 5439946546123540232, guid: d64e74c21b45885438ab466cfec6444b, type: 3}
+    maxHealth: 120
+    moveSpeedMultiplier: 0.9
+    boundsSize: {x: 1.45, y: 0.765, z: 0.72}
+    pivotBottomOffset: -0.36

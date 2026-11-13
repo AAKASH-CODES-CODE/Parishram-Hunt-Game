@@ -1,0 +1,26 @@
+{
+    "name": "CoachingPropHunt.Editor",
+    "rootNamespace": "CoachingPropHunt.Editor",
+    "references": [
+        "CoachingPropHunt.Runtime",
+        "Unity.AI.Navigation",
+        "Unity.AI.Navigation.Editor",
+        "Unity.Netcode.Runtime",
+        "Unity.RenderPipelines.Core.Runtime",
+        "Unity.RenderPipelines.Universal.Runtime",
+        "Unity.TextMeshPro",
+        "UnityEngine.UI",
+        "glTFast"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
