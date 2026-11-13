@@ -18,6 +18,24 @@ namespace CoachingPropHunt.Networking.SocketIO
     }
 
     [Serializable]
+    public class RoomStateEnvelope
+    {
+        public bool success;
+        public string event_type;
+        public string notification;
+        public double timestamp;
+        public RoomStateData room;
+    }
+
+    [Serializable]
+    public class RoomCreatedData
+    {
+        public bool success;
+        public string room_code;
+        public string message;
+    }
+
+    [Serializable]
     public class RoomStateData
     {
         public string room_code;

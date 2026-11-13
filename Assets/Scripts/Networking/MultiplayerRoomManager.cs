@@ -151,12 +151,14 @@ namespace CoachingPropHunt.Networking
 
         public void CreateRoomSocketIO(string roomName, int maxPlayers = 8, bool isPrivate = false)
         {
+            HookSocketIOClient();
             string pname = GameStateManager.Instance != null ? GameStateManager.Instance.Progress.playerName : "Student";
             SocketIO.SocketIOUnityClient.Instance?.CreateRoom(pname, roomName, maxPlayers, isPrivate);
         }
 
         public void JoinRoomSocketIO(string roomCode)
         {
+            HookSocketIOClient();
             string pname = GameStateManager.Instance != null ? GameStateManager.Instance.Progress.playerName : "Student";
             SocketIO.SocketIOUnityClient.Instance?.JoinRoom(pname, roomCode);
         }
@@ -199,18 +201,50 @@ namespace CoachingPropHunt.Networking
             LoadCachedRegionFromPrefs();
             PlayerAuthentication.OnSignedInCompleted += HandleSignedInPrewarm;
 
-            // Hook into Socket.IO Authoritative Server events
-            if (SocketIO.SocketIOUnityClient.Instance != null)
+            HookSocketIOClient();
+        }
+
+        private void Start()
+        {
+            HookSocketIOClient();
+        }
+
+        public void HookSocketIOClient()
+        {
+            var sio = SocketIO.SocketIOUnityClient.Instance;
+            if (sio != null)
             {
-                SocketIO.SocketIOUnityClient.Instance.OnRoomStateUpdated += _ => OnRoomStateChanged?.Invoke();
-                SocketIO.SocketIOUnityClient.Instance.OnKicked += reason =>
-                {
-                    LastError = reason;
-                    GameStateManager.Instance?.ShowToast(reason, Palette.DangerRed);
-                    GameStateManager.Instance?.ReturnToTitle();
-                    OnRoomStateChanged?.Invoke();
-                };
+                sio.OnRoomStateUpdated -= HandleSocketIORoomUpdated;
+                sio.OnRoomStateUpdated += HandleSocketIORoomUpdated;
+                sio.OnMatchStarted -= HandleSocketIOMatchStarted;
+                sio.OnMatchStarted += HandleSocketIOMatchStarted;
+                sio.OnKicked -= HandleSocketIOKicked;
+                sio.OnKicked += HandleSocketIOKicked;
             }
+        }
+
+        private void HandleSocketIORoomUpdated(SocketIO.RoomStateData data)
+        {
+            Debug.Log($"[MRM] HandleSocketIORoomUpdated: Code={data?.room_code}, Players={data?.players?.Count}");
+            OnRoomStateChanged?.Invoke();
+        }
+
+        private void HandleSocketIOMatchStarted(SocketIO.MatchStartedData data)
+        {
+            Debug.Log($"[MRM] HandleSocketIOMatchStarted: Starting match for room {data?.room_code}");
+            if (GameStateManager.Instance != null && !GameStateManager.Instance.IsMatchLive)
+            {
+                int totalSlots = (data != null && data.hunters_count + data.props_count > 0) ? (data.hunters_count + data.props_count) : 8;
+                GameStateManager.Instance.StartMatch(true, totalSlots);
+            }
+        }
+
+        private void HandleSocketIOKicked(string reason)
+        {
+            LastError = reason;
+            GameStateManager.Instance?.ShowToast(reason, Palette.DangerRed);
+            GameStateManager.Instance?.ReturnToTitle();
+            OnRoomStateChanged?.Invoke();
         }
 
         private void LoadCachedRegionFromPrefs()
@@ -456,6 +490,8 @@ namespace CoachingPropHunt.Networking
 
         private async Task LeaveRoomInternalAsync()
         {
+            SocketIO.SocketIOUnityClient.Instance?.LeaveRoom();
+            OnRoomStateChanged?.Invoke();
             UnhookSessionEvents();
             if (_activeSession != null)
             {

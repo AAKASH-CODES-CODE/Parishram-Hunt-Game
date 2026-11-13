@@ -186,6 +186,19 @@ namespace CoachingPropHunt.Core
         {
             ShellState = next;
             Time.timeScale = (next == AppShellState.Paused && !IsOnlineSession) ? 0f : 1f;
+
+            // Thermal & Battery Optimization:
+            // 30 FPS in title/browser/lobby to let GPU and phone cool down
+            // 60 FPS in active match for peak responsive gameplay
+            if (next == AppShellState.Title || next == AppShellState.RoomLobby)
+            {
+                Application.targetFrameRate = 30;
+            }
+            else
+            {
+                Application.targetFrameRate = 60;
+            }
+
             OnShellStateChanged?.Invoke(next);
         }
 

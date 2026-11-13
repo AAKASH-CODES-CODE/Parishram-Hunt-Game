@@ -280,15 +280,66 @@ namespace CoachingPropHunt.Networking.SocketIO
             {
                 try
                 {
-                    var data = JsonUtility.FromJson<RoomStateData>(json);
-                    if (data != null)
+                    RoomStateData data = null;
+                    var env = JsonUtility.FromJson<RoomStateEnvelope>(json);
+                    if (env != null && env.room != null && !string.IsNullOrEmpty(env.room.room_code))
+                    {
+                        data = env.room;
+                        if (!string.IsNullOrEmpty(env.notification))
+                            data.notification = env.notification;
+                    }
+                    else
+                    {
+                        data = JsonUtility.FromJson<RoomStateData>(json);
+                    }
+
+                    if (data != null && !string.IsNullOrEmpty(data.room_code))
                     {
                         LastRoomState = data;
                         CurrentRoomCode = data.room_code;
+                        Debug.Log($"[SocketIO] room_state_update received: Code={data.room_code}, Players={data.players.Count}");
                         OnRoomStateUpdated?.Invoke(data);
                     }
                 }
                 catch (Exception e) { Debug.LogError($"[SocketIO] Error parsing room_state_update: {e}"); }
+            });
+
+            On("room_created", json =>
+            {
+                try
+                {
+                    var res = JsonUtility.FromJson<RoomCreatedData>(json);
+                    if (res != null && !string.IsNullOrEmpty(res.room_code))
+                    {
+                        CurrentRoomCode = res.room_code;
+                        Debug.Log($"[SocketIO] room_created received: Code={res.room_code}");
+                        if (LastRoomState == null)
+                            LastRoomState = new RoomStateData { room_code = res.room_code };
+                        else
+                            LastRoomState.room_code = res.room_code;
+                        OnRoomStateUpdated?.Invoke(LastRoomState);
+                    }
+                }
+                catch (Exception e) { Debug.LogError($"[SocketIO] Error parsing room_created: {e}"); }
+            });
+
+            On("room_joined", json =>
+            {
+                try
+                {
+                    var res = JsonUtility.FromJson<RoomCreatedData>(json);
+                    if (res != null && !string.IsNullOrEmpty(res.room_code))
+                    {
+                        CurrentRoomCode = res.room_code;
+                        Debug.Log($"[SocketIO] room_joined received: Code={res.room_code}");
+                        if (LastRoomState == null)
+                            LastRoomState = new RoomStateData { room_code = res.room_code };
+                        else
+                            LastRoomState.room_code = res.room_code;
+                        OnRoomStateUpdated?.Invoke(LastRoomState);
+                    }
+                }
+                catch (Exception e) { Debug.LogError($"[SocketIO] Error parsing room_joined: {e}"); }
             });
 
             On("match_started", json =>
@@ -468,12 +519,30 @@ namespace CoachingPropHunt.Networking.SocketIO
             public bool is_private;
         }
 
-        public void CreateRoom(string playerName, string roomName, int maxPlayers = 8, bool isPrivate = false)
+        public async void CreateRoom(string playerName, string roomName, int maxPlayers = 8, bool isPrivate = false)
         {
+            if (!IsConnected)
+            {
+                Debug.Log("[SocketIO] CreateRoom called while not connected. Connecting first...");
+                bool ok = await ConnectAsync();
+                if (!ok)
+                {
+                    Debug.LogError("[SocketIO] Failed to connect to server for CreateRoom.");
+                    EnqueueMainThread(() => OnErrorReceived?.Invoke("Could not connect to online server. Check internet connection!"));
+                    return;
+                }
+                int waitAttempts = 0;
+                while (!IsConnected && waitAttempts < 25)
+                {
+                    await Task.Delay(100);
+                    waitAttempts++;
+                }
+            }
+
             var req = new CreateRoomRequest
             {
                 player_name = playerName,
-                room_name = roomName,
+                room_name = string.IsNullOrEmpty(roomName) ? $"{playerName}'s Room" : roomName,
                 max_players = maxPlayers,
                 is_private = isPrivate
             };
@@ -487,8 +556,26 @@ namespace CoachingPropHunt.Networking.SocketIO
             public string room_code;
         }
 
-        public void JoinRoom(string playerName, string roomCode)
+        public async void JoinRoom(string playerName, string roomCode)
         {
+            if (!IsConnected)
+            {
+                Debug.Log("[SocketIO] JoinRoom called while not connected. Connecting first...");
+                bool ok = await ConnectAsync();
+                if (!ok)
+                {
+                    Debug.LogError("[SocketIO] Failed to connect to server for JoinRoom.");
+                    EnqueueMainThread(() => OnErrorReceived?.Invoke("Could not connect to online server. Check internet connection!"));
+                    return;
+                }
+                int waitAttempts = 0;
+                while (!IsConnected && waitAttempts < 25)
+                {
+                    await Task.Delay(100);
+                    waitAttempts++;
+                }
+            }
+
             var req = new JoinRoomRequest
             {
                 player_name = playerName,

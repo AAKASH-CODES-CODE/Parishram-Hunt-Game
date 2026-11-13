@@ -290,19 +290,20 @@ namespace CoachingPropHunt.Core
                 PlayerPrefs.Save();
             }
 
-            Application.targetFrameRate = 60;
+            QualitySettings.vSyncCount = 0;
             QualitySettings.streamingMipmapsActive = true;
-            QualitySettings.streamingMipmapsMemoryBudget = tier == GraphicsPresetTier.Low ? 128f : (tier == GraphicsPresetTier.Medium ? 160f : 224f);
-            QualitySettings.lodBias = tier == GraphicsPresetTier.Low ? 0.72f : (tier == GraphicsPresetTier.Medium ? 0.85f : 1.15f);
+            QualitySettings.streamingMipmapsMemoryBudget = tier == GraphicsPresetTier.Low ? 96f : (tier == GraphicsPresetTier.Medium ? 128f : 160f);
+            QualitySettings.lodBias = tier == GraphicsPresetTier.Low ? 0.70f : (tier == GraphicsPresetTier.Medium ? 0.85f : 1.0f);
 
             var urp = GraphicsSettings.currentRenderPipeline as UniversalRenderPipelineAsset;
             if (urp != null)
             {
-                urp.renderScale = tier == GraphicsPresetTier.Low ? 0.80f : (tier == GraphicsPresetTier.Medium ? 0.90f : 1.0f);
-                urp.supportsHDR = tier == GraphicsPresetTier.High;
-                urp.msaaSampleCount = tier == GraphicsPresetTier.High ? 2 : 1;
-                urp.shadowDistance = tier == GraphicsPresetTier.Low ? 26f : (tier == GraphicsPresetTier.Medium ? 36f : 50f);
-                urp.maxAdditionalLightsCount = tier == GraphicsPresetTier.Low ? 1 : (tier == GraphicsPresetTier.Medium ? 2 : 4);
+                // Thermal-optimized renderScale for Mobile: 0.85x looks crisp on modern DPI while cutting GPU workload ~30%
+                urp.renderScale = tier == GraphicsPresetTier.Low ? 0.75f : (tier == GraphicsPresetTier.Medium ? 0.85f : 0.95f);
+                urp.supportsHDR = false; // Disable heavy HDR FP16 buffers on mobile to eliminate heat
+                urp.msaaSampleCount = 1; // 1 sample (MSAA disabled, uses fast post-FXAA)
+                urp.shadowDistance = tier == GraphicsPresetTier.Low ? 22f : (tier == GraphicsPresetTier.Medium ? 30f : 40f);
+                urp.maxAdditionalLightsCount = tier == GraphicsPresetTier.Low ? 1 : (tier == GraphicsPresetTier.Medium ? 2 : 3);
             }
 
             if (Application.isPlaying)

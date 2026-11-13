@@ -26,8 +26,8 @@ namespace CoachingPropHunt.Editor
             EditorUserBuildSettings.buildAppBundle = false;
             PlayerSettings.productName = "Parishram Hunt";
             PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.Android, "com.parishram.hunt");
-            PlayerSettings.bundleVersion = "0.4.1";
-            PlayerSettings.Android.bundleVersionCode = 5;
+            PlayerSettings.bundleVersion = "0.4.2";
+            PlayerSettings.Android.bundleVersionCode = 6;
             PlayerSettings.Android.targetArchitectures = AndroidArchitecture.ARM64;
             PlayerSettings.SetScriptingBackend(NamedBuildTarget.Android, ScriptingImplementation.IL2CPP);
             PlayerSettings.SetIl2CppCodeGeneration(NamedBuildTarget.Android, Il2CppCodeGeneration.OptimizeSize);

@@ -1990,24 +1990,11 @@ namespace CoachingPropHunt.UI
             if (_lobbyCodeText != null) _lobbyCodeText.text = $"ROOM CODE: {mrm.CurrentJoinCode}";
 
             var sb = new System.Text.StringBuilder();
-            var peers = NetworkPlayerState.AllPeers;
-            int count = peers.Count > 0 ? peers.Count : mrm.ConnectedHumanCount;
-            sb.AppendLine($"CONNECTED FRIENDS ({count} Human + Bots backfill):");
-            if (peers.Count > 0)
-            {
-                for (int i = 0; i < peers.Count; i++)
-                {
-                    var p = peers[i];
-                    if (p == null) continue;
-                    string n = p.NetName.Value.ToString();
-                    if (string.IsNullOrEmpty(n)) n = $"Player {i + 1}";
-                    string tag = p.OwnerClientId == 0 ? " (Host)" : "";
-                    sb.AppendLine($"  {i + 1}. {n}{tag}");
-                }
-            }
             if (Networking.SocketIO.SocketIOUnityClient.Instance?.LastRoomState?.players != null && Networking.SocketIO.SocketIOUnityClient.Instance.LastRoomState.players.Count > 0)
             {
                 var sList = Networking.SocketIO.SocketIOUnityClient.Instance.LastRoomState.players;
+                int maxSlots = Networking.SocketIO.SocketIOUnityClient.Instance.LastRoomState.max_players > 0 ? Networking.SocketIO.SocketIOUnityClient.Instance.LastRoomState.max_players : 8;
+                sb.AppendLine($"CONNECTED FRIENDS ({sList.Count}/{maxSlots}):");
                 for (int i = 0; i < sList.Count; i++)
                 {
                     var sp = sList[i];
@@ -2018,9 +2005,27 @@ namespace CoachingPropHunt.UI
             }
             else
             {
-                var names = mrm.GetConnectedPlayerNames();
-                for (int i = 0; i < names.Count; i++)
-                    sb.AppendLine($"  {i + 1}. {names[i]}");
+                var peers = NetworkPlayerState.AllPeers;
+                int count = peers.Count > 0 ? peers.Count : mrm.ConnectedHumanCount;
+                sb.AppendLine($"CONNECTED FRIENDS ({count} Human + Bots backfill):");
+                if (peers.Count > 0)
+                {
+                    for (int i = 0; i < peers.Count; i++)
+                    {
+                        var p = peers[i];
+                        if (p == null) continue;
+                        string n = p.NetName.Value.ToString();
+                        if (string.IsNullOrEmpty(n)) n = $"Player {i + 1}";
+                        string tag = p.OwnerClientId == 0 ? " (Host)" : "";
+                        sb.AppendLine($"  {i + 1}. {n}{tag}");
+                    }
+                }
+                else
+                {
+                    var names = mrm.GetConnectedPlayerNames();
+                    for (int i = 0; i < names.Count; i++)
+                        sb.AppendLine($"  {i + 1}. {names[i]}");
+                }
             }
             if (_lobbyPlayersText != null) _lobbyPlayersText.text = sb.ToString();
 
